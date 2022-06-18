@@ -1,0 +1,9 @@
+:root {
+   /* Width */
+   --container-width: 990px;
+   /* Colors */
+   --accent-color: #DAA520;
+   --yellow: #F7DEA6;
+   --blue: #A8DCEC;
+   --pink: #F9BDBD;
+}

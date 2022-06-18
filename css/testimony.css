@@ -1,0 +1,161 @@
+.testimony__body {}
+
+.testimony__item {
+   display: flex;
+   gap: 40px;
+
+}
+
+.testimony__image {
+   height: 320px;
+   min-width: 240px;
+   border-radius: 100px 0 100px 0;
+   overflow: hidden;
+   z-index: 10;
+   box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+}
+
+.testimony__image img {
+   transform: scale(1);
+   z-index: 0;
+   transition: .7s ease;
+}
+
+.testimony__image:hover img {
+   transform: scale(1.1);
+}
+
+.testimony__comment {}
+
+.comment {}
+
+.comment__body {
+   border: 1px solid #A8DCEC;
+   border-radius: 0 100px 0 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 16px;
+   min-height: 280px;
+   padding: 0 16px;
+}
+
+.comment__rating {
+   display: flex;
+   gap: 4px;
+
+}
+
+.comment__rating span {
+   width: 24px;
+   height: 24px;
+   background-image: url(../img/star.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.comment__text {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   color: #3E3F43;
+}
+
+.comment__user {}
+
+.user {
+   display: flex;
+   gap: 8px;
+}
+
+.user__avatar {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.user__info p {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 16px;
+   color: #AFAFAF;
+}
+
+.comment__nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 21px;
+}
+
+.comment__prev {
+   position: relative;
+   width: 34px;
+   height: 7px;
+   cursor: pointer;
+}
+
+.comment__prev::after {
+   content: '';
+   position: absolute;
+   background-image: url(../img/icons/arrow.svg);
+   transform: scale(-1, 1);
+   opacity: .3;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   transition: .3s ease;
+}
+
+.comment__prev:hover::after {
+   opacity: 1;
+}
+
+.comment__next {
+   position: relative;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 19px;
+   color: #3E3F43;
+   display: flex;
+   align-items: center;
+   padding-right: 40px;
+   cursor: pointer;
+   opacity: .3;
+   transition: .3s ease;
+}
+
+.comment__next::after {
+   content: '';
+   position: absolute;
+   width: 34px;
+   height: 7px;
+   right: 0;
+   background-image: url(../img/icons/arrow.svg);
+}
+
+.comment__next:hover {
+   opacity: 1;
+}
+
+.testimony__bullets {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   gap: 8px;
+}
+
+.testimony__bullets span {
+   width: 40px;
+   height: 8px;
+   border-radius: 8px;
+   background-color: #E5E5E5;
+   margin-top: 24px;
+   cursor: pointer;
+}
+
+.testimony__bullets .active {
+   background-color: var(--accent-color);
+}

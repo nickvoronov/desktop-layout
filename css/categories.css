@@ -1,0 +1,128 @@
+.categories__body {
+   display: flex;
+   gap: 56px;
+   flex-wrap: wrap;
+}
+
+.categories__item {
+   position: relative;
+   width: 280px;
+   height: 400px;
+}
+
+.category__decore::before {
+   top: 0;
+   left: 0;
+   z-index: 1;
+   transition: .2s ease;
+}
+
+.category:first-child .category__decore::before {
+   background-color: var(--pink);
+}
+
+.category:first-child:hover .category__decore::before {
+   box-shadow: 0 0 15px var(--pink);
+}
+
+.category:nth-child(2) .category__decore::before {
+   background-color: var(--yellow);
+}
+
+.category:nth-child(2):hover .category__decore::before {
+   box-shadow: 0 0 15px var(--yellow);
+}
+
+.category:nth-child(3) .category__decore::before {
+   background-color: var(--blue);
+}
+
+.category:nth-child(3):hover .category__decore::before {
+   box-shadow: 0 0 15px var(--blue);
+}
+
+.category:nth-child(4) .category__decore::before {
+   background-color: var(--pink);
+}
+
+.category:nth-child(4):hover .category__decore::before {
+   box-shadow: 0 0 15px var(--pink);
+}
+
+.category:nth-child(5) .category__decore::before {
+   background-color: var(--yellow);
+}
+
+.category:nth-child(5):hover .category__decore::before {
+   box-shadow: 0 0 15px var(--yellow);
+}
+
+.category {
+   padding: 24px 16px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.category__title {
+   position: relative;
+   z-index: 2;
+   font-size: 24px;
+   line-height: 33px;
+   color: #3E3F43;
+}
+
+.category__image {
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   flex: 1 0 auto;
+   margin: 22px 0;
+}
+
+.category__image img {
+   height: 100%;
+}
+
+.category:first-child .category__image img {
+   align-self: flex-start;
+   margin-left: -16px;
+   width: 246px;
+}
+
+.category:nth-child(2) .category__image img {
+   align-self: center;
+   width: 160px;
+   height: 230px;
+}
+
+.category:nth-child(3) .category__image img {
+   align-self: center;
+   width: 180px;
+}
+
+.category:nth-child(4) .category__image img {
+   align-self: center;
+   width: 149px;
+   height: 235px;
+}
+
+.category:nth-child(5) .category__image img {
+   align-self: center;
+   justify-self: center;
+   margin: auto;
+   height: 139px;
+   width: 235px;
+}
+
+.category__button {
+   position: relative;
+   z-index: 2;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 25px;
+   text-align: center;
+   align-self: flex-end;
+   padding: 0 18px;
+   border-radius: 4px;
+}

@@ -1,0 +1,78 @@
+.about-us__inner {
+   position: relative;
+}
+
+.about-us__inner::after {
+   content: '';
+   position: absolute;
+   background-image: url(../img/bg-logo.png);
+   background-repeat: no-repeat;
+   background-size: contain;
+   width: 382px;
+   height: 382px;
+   top: calc(44%);
+   left: -170px;
+   z-index: 1;
+}
+
+.about-us__top {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.about-us__media {
+   position: relative;
+   height: 400px;
+   flex: 1 1 50%;
+}
+
+.about-us__decore::before {
+   background-color: var(--yellow);
+}
+
+.about-us__image {
+   position: absolute;
+   z-index: 3;
+   width: 388px;
+   height: 306px;
+   top: 82px;
+   left: 38px;
+}
+
+.about-us__text {
+   flex: 1 1 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 16px;
+}
+
+.about-us__text h3 {
+   color: #3E3F43;
+}
+
+.about-us__bottom {
+   position: relative;
+}
+
+.about-us__bottom img {
+   position: absolute;
+   right: -100px;
+   top: 0;
+}
+
+.about-us__addition {
+   height: 400px;
+   max-width: 75%;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   align-items: flex-start;
+   justify-content: center;
+}
+
+.about-us__addition h4 {
+   color: #000000;
+}
